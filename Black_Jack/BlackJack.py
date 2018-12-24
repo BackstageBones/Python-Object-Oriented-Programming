@@ -2,15 +2,14 @@ import random
 
 class Deck(object):
 
-    colors = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
+    def __init__(self,colors,value):
+        self.colors = colors
+        self.value = value
 
-    def deck_constructor(self,):
-        deck = []
-        for i in range(1, 14):
-            for color in self.colors:
-                deck.append({"color)": i})
-        return deck
+    def deck_constructor(self):
+        card = [(value, color) for value in self.value for color in self.colors]
+        return  card
 
 if __name__ == "__main__":
-    My_Deck = Deck()
-    My_Deck.deck_constructor()
+    My_Deck = Deck(["Diamonds","Spades","Club","Hearts"],range(1,14))
+    print(My_Deck.deck_constructor())
