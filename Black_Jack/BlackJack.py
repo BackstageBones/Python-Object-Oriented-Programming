@@ -15,7 +15,9 @@ class Deck(object):
         return random.shuffle(self.card)
 
     def draw(self):
-        self.hand += random.choice(self.card)
+        x = random.choice(self.card)
+        if x not in self.hand:
+            self.hand +=x
 
 if __name__ == "__main__":
     My_Deck = Deck(["Diamonds","Spades","Clubs","Hearts"],[1,2,3,4,5,6,7,8,9,10,'Jack','Queen','King','Ace'],hand=[],card=())
