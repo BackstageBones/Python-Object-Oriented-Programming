@@ -34,13 +34,14 @@ class Hand(object):
         self.hand = []
 
     def __str__(self):
-        print(self.hand)
+        self.hand
+
 
     def value_counter(self):
         value = 0
         for card in self.hand:
             if card[0] == 'Jack' or card[0] == "Queen" or card[0] =="King" :
-                value+=10
+                value +=10
             elif type(card[0])==int:
                 value+=card[0]
             else:
@@ -48,13 +49,15 @@ class Hand(object):
                     value+=11
                 else:
                     value+=1
-        if value <=21:
-            print("You are still in game, your current hand score is {}".format(value))
-            return value
-        else:
-            print("You are BUST! Your hand score excited 21 and currently is {}".format(value))
         return value
 
+    def is_bust(self,value):
+        if value >21 :
+            print("You are BUST! Your hand score excited 21 and currently is {}".format(Player_Hand.value_counter()))
+            return True
+        else:
+            print("You are still in game, your current hand score is {}".format(Player_Hand.value_counter()))
+            return False
 
 
 class Chips(object):
@@ -69,19 +72,6 @@ class Chips(object):
                 self.money - anwser
                 return bankroll + anwser
 
-def ask_to_draw():
-    anwser = 0
-    while True:
-        question = input('Would you like to take another card? Y/N')
-        if question in ('y','Y'):
-            return anwser
-        elif question in ('n','N'):
-            anwser =1
-            return anwser
-        else:
-            continue
-
-
 
 
 
@@ -94,29 +84,51 @@ if __name__ == "__main__":
     Dealers_Chips = Chips()
     Card_Deck.deck_constructor()
     Card_Deck.deck_shuffle()
-    question = ask_to_draw()
-    player_cards_value = Player_Hand.value_counter()
-    dealers_hand_value = Dealers_Hand.value_counter()
     bankroll = 0
     game_on = True
     Player_Turn = True
 
 while game_on:
-    while Player_Turn:
-        if player_cards_value <=21 :
-            print("It's player turn !")
-            Player_Hand.__str__()
-            question
-            if question == 0:
+    Player_Chips.make_bet()
+    Card_Deck.draw()
+    Player_Hand.hand.append(Card_Deck.draw())
+    Card_Deck.draw()
+    Player_Hand.hand.append(Card_Deck.draw())
+    print(Player_Hand.hand)
+    Player_Hand.is_bust(Player_Hand.value_counter())
+    Card_Deck.draw()
+    Dealers_Hand.hand.append(Card_Deck.draw())
+    Card_Deck.draw()
+    Dealers_Hand.hand.append(Card_Deck.draw())
+    while Player_Hand.value_counter() <=21:
+            question= input("Would you like to take a card ? Y/N")
+            if question in ('y','Y'):
                 Card_Deck.draw()
                 Player_Hand.hand.append(Card_Deck.draw())
                 Player_Hand.value_counter()
+                print(Player_Hand.hand)
+                if Player_Hand.is_bust(Player_Hand.value_counter())== True:
+                    print("You have loose")
             else:
+                print("It's Dealers turn to play!")
                 break
-        print("You are Bust!")
-        break
-    Player_Turn =False
-game_on = False
+    while Dealers_Hand.value_counter() <=17:
+        Card_Deck.draw()
+        Dealers_Hand.hand.append(Card_Deck.draw())
+        Dealers_Hand.value_counter()
+        print(Dealers_Hand.hand)
+        if  Dealers_Hand.is_bust(Dealers_Hand.value_counter()) == True:
+            break
+if Player_Hand.value_counter() <= 21 and Player_Hand.value_counter()> Dealers_Hand.value_counter():
+    print("You have won!")
+else:
+    print("You have loose")
+
+
+
+
+
+
 
 
 
