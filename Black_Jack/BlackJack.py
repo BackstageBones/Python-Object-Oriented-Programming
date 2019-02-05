@@ -34,7 +34,7 @@ class Hand(object):
         self.hand = []
 
     def __str__(self):
-        self.hand
+        print(self.hand)
 
 
     def value_counter(self):
@@ -51,12 +51,12 @@ class Hand(object):
                     value+=1
         return value
 
-    def is_bust(self,value):
-        if value >21 :
-            print("You are BUST! Your hand score excited 21 and currently is {}".format(Player_Hand.value_counter()))
+    def is_bust(self):
+        if self.value_counter() >21 :
+            print("You are BUST! Your hand score excited 21 and currently is {}".format(self.value_counter()))
             return True
         else:
-            print("You are still in game, your current hand score is {}".format(Player_Hand.value_counter()))
+            print("You are still in game, your current hand score is {}".format(self.value_counter()))
             return False
 
 
@@ -90,25 +90,22 @@ if __name__ == "__main__":
 
 while game_on:
     Player_Chips.make_bet()
-    Card_Deck.draw()
-    Player_Hand.hand.append(Card_Deck.draw())
-    Card_Deck.draw()
-    Player_Hand.hand.append(Card_Deck.draw())
-    print(Player_Hand.hand)
-    Player_Hand.is_bust(Player_Hand.value_counter())
-    Card_Deck.draw()
-    Dealers_Hand.hand.append(Card_Deck.draw())
-    Card_Deck.draw()
-    Dealers_Hand.hand.append(Card_Deck.draw())
-    while Player_Hand.value_counter() <=21:
+    for _ in range(0,2):
+        Card_Deck.draw()
+        Player_Hand.hand.append(Card_Deck.draw())
+    print('Your current hand is: {}'.format(Player_Hand.hand))
+    for _ in range(0,2):
+        Card_Deck.draw()
+        Dealers_Hand.hand.append(Card_Deck.draw())
+    print('Dealers hand is: {}'.format(Dealers_Hand.hand[0]))
+    while Player_Hand.is_bust() != True:
             question= input("Would you like to take a card ? Y/N")
             if question in ('y','Y'):
                 Card_Deck.draw()
                 Player_Hand.hand.append(Card_Deck.draw())
                 Player_Hand.value_counter()
-                print(Player_Hand.hand)
-                if Player_Hand.is_bust(Player_Hand.value_counter())== True:
-                    print("You have loose")
+                print('Your current hand is: {}'.format(Player_Hand.hand))
+
             else:
                 print("It's Dealers turn to play!")
                 break
@@ -116,10 +113,10 @@ while game_on:
         Card_Deck.draw()
         Dealers_Hand.hand.append(Card_Deck.draw())
         Dealers_Hand.value_counter()
-        print(Dealers_Hand.hand)
-        if  Dealers_Hand.is_bust(Dealers_Hand.value_counter()) == True:
-            break
-if Player_Hand.value_counter() <= 21 and Player_Hand.value_counter()> Dealers_Hand.value_counter():
+        print('Dealers hand is: {}'.format(Dealers_Hand.hand))
+        Dealers_Hand.is_bust()
+    break
+if Player_Hand.value_counter() <=21 and Player_Hand.value_counter() > Dealers_Hand.value_counter():
     print("You have won!")
 else:
     print("You have loose")
