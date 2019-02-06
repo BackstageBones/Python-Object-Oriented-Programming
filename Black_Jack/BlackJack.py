@@ -87,6 +87,7 @@ if __name__ == "__main__":
     bankroll = 0
     game_on = True
     Player_Turn = True
+    Dealers_Turn = True
 
 while game_on:
     Player_Chips.make_bet()
@@ -98,28 +99,32 @@ while game_on:
         Card_Deck.draw()
         Dealers_Hand.hand.append(Card_Deck.draw())
     print('Dealers hand is: {}'.format(Dealers_Hand.hand[0]))
-    while Player_Hand.is_bust() != True:
+    Player_Hand.is_bust()
+    while Player_Turn:
             question= input("Would you like to take a card ? Y/N")
             if question in ('y','Y'):
                 Card_Deck.draw()
                 Player_Hand.hand.append(Card_Deck.draw())
                 Player_Hand.value_counter()
                 print('Your current hand is: {}'.format(Player_Hand.hand))
-
+                if Player_Hand.is_bust() == True:
+                    Player_Turn = False
+                    break
             else:
                 print("It's Dealers turn to play!")
                 break
-    while Dealers_Hand.value_counter() <=17:
-        Card_Deck.draw()
-        Dealers_Hand.hand.append(Card_Deck.draw())
-        Dealers_Hand.value_counter()
-        print('Dealers hand is: {}'.format(Dealers_Hand.hand))
-        Dealers_Hand.is_bust()
-    break
-if Player_Hand.value_counter() <=21 and Player_Hand.value_counter() > Dealers_Hand.value_counter():
-    print("You have won!")
-else:
-    print("You have loose")
+    while Dealers_Turn:
+        while Dealers_Hand.value_counter() <=17:
+            Card_Deck.draw()
+            Dealers_Hand.hand.append(Card_Deck.draw())
+            Dealers_Hand.value_counter()
+            print('Dealers hand is: {}'.format(Dealers_Hand.hand))
+
+        break
+    if Player_Hand.value_counter() <=21 and Player_Hand.value_counter() > Dealers_Hand.value_counter():
+        print("You have won!")
+    else:
+        print("You have loose")
 
 
 
