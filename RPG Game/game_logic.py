@@ -1,7 +1,5 @@
-from .villain_character_class.villain_character_class import Villain
-from .class_exceptions.class_exception import MethodNotCallableForThatClass
+from villain_character_class.villain_character_class import Villain
+from character_abstractclass.character_constants import CharacterConstant
 
-warboss_gorgutz = "100-5-10-0"
-Villain(warboss_gorgutz.split('-'))
-
-
+Warboss = [CharacterConstant.basic_damage['force_commander'], CharacterConstant.strong_damage['force_commander']].
+Gorgutz = Villain.from_string(Warboss)

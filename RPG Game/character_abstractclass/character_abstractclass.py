@@ -2,13 +2,9 @@ from abc import ABC, abstractmethod
 
 
 class CharacterAbstractClass(ABC):
-    default_health_points = 100
 
-    def __init__(self, health, weak_attack, strong_attack, experience_points):
+    def __init__(self, health):
         self.health = health
-        self.weak_attack = weak_attack
-        self.strong_attack = strong_attack
-        self.experience_points = experience_points
 
     @abstractmethod
     def healing(self):
@@ -29,7 +25,3 @@ class CharacterAbstractClass(ABC):
     @abstractmethod
     def special_ability(self):
         pass
-
-    @classmethod
-    def override_health_points(cls, hp):
-        cls.default_health_points = hp

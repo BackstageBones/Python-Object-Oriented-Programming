@@ -1,12 +1,14 @@
-from ..character_abstractclass import character_abstractclass
+from character_abstractclass.character_abstractclass import CharacterAbstractClass
 from class_exceptions.class_exception import MethodNotCallableForThatClass
 
 
-class Villain(character_abstractclass):
+class Villain(CharacterAbstractClass):
+    default_health_points = 100
 
-    def __init__(self, name):
-        self.name = name
-        super(Villain, self).__init__()
+    def __init__(self, basic_damage, strong_damage):
+        self.weak_attack = basic_damage
+        self.strong_damage = strong_damage
+        super().__init__(self.default_health_points)
 
     def healing(self):
         raise MethodNotCallableForThatClass
@@ -22,3 +24,12 @@ class Villain(character_abstractclass):
 
     def special_ability(self):
         pass
+
+    @classmethod
+    def override_health_points(cls, hp):
+        cls.default_health_points = hp
+
+    @classmethod
+    def from_constants(cls, innit_constant):
+        basic_damage, strong_damage = innit_constant
+        return cls(basic_damage, strong_damage)
