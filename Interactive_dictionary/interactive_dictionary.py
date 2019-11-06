@@ -5,22 +5,22 @@ from difflib import get_close_matches, SequenceMatcher
 class InteractiveDictionary(object):
     def __init__(self):
         self.dictionary = json.load(open("data.json", "r"))
+        self.close_words = ('q', 'quit', 'end', '/')
 
     def ask_for_key(self):
         while True:
             question = (input("type the key: "))
             if not question.isalpha():
-                print("You have to provide a key word not a number")
-
+                return "You have to provide a key word not a number"
             return question.lower()
 
     def search_data(self, question):
         try:
             self.dictionary[question]
         except KeyError:
-            print(self.calculate_matches(question))
+            return self.calculate_matches(question)
         else:
-            print(self.dictionary[question])
+            return self.dictionary[question]
 
     def calculate_matches(self, question):
         calculate_match = get_close_matches(question, self.dictionary.keys(), n=1)
@@ -30,15 +30,16 @@ class InteractiveDictionary(object):
             user_input = input("Y/N ?").lower()
             if user_input in ('yes', 'y'):
                 return self.dictionary[calculate_match[0]]
-            else:
-                pass
         else:
             return "No word definition found for that key, try again"
 
     def interface(self):
         while True:
             question = self.ask_for_key()
-            self.search_data(question)
+            if question in self.close_words:
+                break
+            else:
+                print(self.search_data(question))
 
 
 if __name__ == "__main__":

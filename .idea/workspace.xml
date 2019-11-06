@@ -194,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573053150148</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added function that suggest closest word using machining algorithm from python builtin library.">
+      <created>1573057475585</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1573057475585</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -222,8 +229,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="simple version of dictionary. Text autocorrect not implemented yet. changing string to lowercase is malfunctioning" />
     <MESSAGE value="fixed text autocorrection" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed text autocorrection" />
+    <MESSAGE value="added function that suggest closest word using machining algorithm from python builtin library." />
+    <option name="LAST_COMMIT_MESSAGE" value="added function that suggest closest word using machining algorithm from python builtin library." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
