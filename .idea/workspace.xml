@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74aafa18-a17f-4087-bec4-3ba0b9a95f2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sentence_maker_programme/sentence_maker_programme.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Python-Object-Oriented-Programming.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python-Object-Oriented-Programming.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interactive_dictionary/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interactive_dictionary/interactive_dictionary.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,11 +27,13 @@
   </component>
   <component name="ProjectId" id="1Semume2coMK3Zfaav0BhuXfN11" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Interactive_dictionary" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Adrian\PycharmProjects\Python-Object-Oriented-Programming\Interactive_dictionary" />
       <recent name="C:\Projects\Python-Object-Oriented-Programming\RPG Game\character_abstractclass" />
       <recent name="C:\Projects\Python-Object-Oriented-Programming\RPG Game\villain_character_class" />
     </key>
@@ -49,7 +50,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.sentence_maker_programme">
+  <component name="RunManager" selected="Python.interactive_dictionary">
     <configuration name="BlackJack" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python-Object-Oriented-Programming" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -92,27 +93,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="def_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Python-Object-Oriented-Programming" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Black_Jack" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Black_Jack/def_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="game_logic" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python-Object-Oriented-Programming" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,6 +106,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RPG Game/game_logic.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="interactive_dictionary" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python-Object-Oriented-Programming" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Interactive_dictionary" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Interactive_dictionary/interactive_dictionary.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -157,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.interactive_dictionary" />
         <item itemvalue="Python.sentence_maker_programme" />
         <item itemvalue="Python.game_logic" />
         <item itemvalue="Python.RPG_Heroe" />
         <item itemvalue="Python.BlackJack" />
-        <item itemvalue="Python.def_test" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +197,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
