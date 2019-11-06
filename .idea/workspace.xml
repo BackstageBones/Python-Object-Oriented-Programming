@@ -201,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573057475585</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added functionality to terminate the programme">
+      <created>1573058866325</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573058866325</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -230,7 +237,8 @@
     <MESSAGE value="simple version of dictionary. Text autocorrect not implemented yet. changing string to lowercase is malfunctioning" />
     <MESSAGE value="fixed text autocorrection" />
     <MESSAGE value="added function that suggest closest word using machining algorithm from python builtin library." />
-    <option name="LAST_COMMIT_MESSAGE" value="added function that suggest closest word using machining algorithm from python builtin library." />
+    <MESSAGE value="added functionality to terminate the programme" />
+    <option name="LAST_COMMIT_MESSAGE" value="added functionality to terminate the programme" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -12,7 +12,7 @@ class InteractiveDictionary(object):
             question = (input("type the key: "))
             if not question.isalpha():
                 return "You have to provide a key word not a number"
-            return question.lower()
+            return question
 
     def search_data(self, question):
         try:
@@ -23,15 +23,23 @@ class InteractiveDictionary(object):
             return self.dictionary[question]
 
     def calculate_matches(self, question):
-        calculate_match = get_close_matches(question, self.dictionary.keys(), n=1)
-        match_ratio = SequenceMatcher(None, question, calculate_match[0])
-        if match_ratio.quick_ratio() > 0.8:
-            print("Did you mean :", calculate_match, '?')
-            user_input = input("Y/N ?").lower()
-            if user_input in ('yes', 'y'):
-                return self.dictionary[calculate_match[0]]
+
+        if question.lower() in self.dictionary.keys():
+            return self.dictionary[question.lower()]
+        elif question.upper() in self.dictionary.keys():
+            return self.dictionary[question.upper()]
+        elif question.title() in self.dictionary.keys():
+            return self.dictionary[question.title()]
         else:
-            return "No word definition found for that key, try again"
+            calculate_match = get_close_matches(question, self.dictionary.keys(), n=1)
+            match_ratio = SequenceMatcher(None, question, calculate_match[0])
+            if match_ratio.quick_ratio() > 0.8:
+                print("Did you mean :", calculate_match, '?')
+                user_input = input("Y/N ?").lower()
+                if user_input in ('yes', 'y'):
+                    return self.dictionary[calculate_match[0]]
+            else:
+                return "No word definition found for that key, try again"
 
     def interface(self):
         while True:
