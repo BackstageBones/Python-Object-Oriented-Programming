@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74aafa18-a17f-4087-bec4-3ba0b9a95f2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Interactive_dictionary/data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interactive_dictionary/interactive_dictionary.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interactive_dictionary/interactive_dictionary.py" beforeDir="false" afterPath="$PROJECT_DIR$/Interactive_dictionary/interactive_dictionary.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -181,6 +180,14 @@
       <option name="presentableId" value="Default" />
       <updated>1546112247515</updated>
     </task>
+    <task id="LOCAL-00001" summary="simple version of dictionary. Text autocorrect not implemented yet. changing string to lowercase is malfunctioning">
+      <created>1573051905633</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573051905633</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -204,5 +211,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="simple version of dictionary. Text autocorrect not implemented yet. changing string to lowercase is malfunctioning" />
+    <option name="LAST_COMMIT_MESSAGE" value="simple version of dictionary. Text autocorrect not implemented yet. changing string to lowercase is malfunctioning" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

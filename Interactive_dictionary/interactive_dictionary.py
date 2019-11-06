@@ -10,27 +10,23 @@ class InteractiveDictionary(object):
             question = (input("type the key: "))
             if not question.isalpha():
                 print("You have to provide a key word not a number")
-                break
 
             return question.lower()
 
-    def search_data(self):
-        question = self.ask_for_key()
-        while True:
-            try:
-                print(self.dictionary[question])
-            except KeyError:
-                print("No word definition found for that key, try again")
-                break
-            else:
-                break
+    def search_data(self, question):
+        try:
+            self.dictionary[question]
+        except KeyError:
+            print("No word definition found for that key, try again")
+        else:
+            print(self.dictionary[question])
 
     def interface(self):
         while True:
-            self.ask_for_key()
-            self.search_data()
+            question = self.ask_for_key()
+            self.search_data(question)
 
 
 if __name__ == "__main__":
     dictionary = InteractiveDictionary()
-    dictionary.interface()
+    print(dictionary.interface())
