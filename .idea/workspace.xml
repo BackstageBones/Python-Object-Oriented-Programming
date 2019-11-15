@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74aafa18-a17f-4087-bec4-3ba0b9a95f2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Interactive_dictionary/MySQL_Interactive_Dictionary.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sentence_maker_programme/sentence_maker_programme.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sentence_maker_programme/sentence_maker_programme.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interactive_dictionary/MySQL_Interactive_Dictionary.py" beforeDir="false" afterPath="$PROJECT_DIR$/Interactive_dictionary/MySQL_Interactive_Dictionary.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

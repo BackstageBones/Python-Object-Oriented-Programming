@@ -35,20 +35,17 @@ class MySqlInteractiveDictionary(object):
                 self.calculate_matches(question)
                 break
 
-
     def calculate_matches(self, question):
         self._cursor.execute("SELECT * FROM Dictionary")
-        results = self._cursor.fetchall()
-        matches = [result for result in results]
-
-        calculate_match = get_close_matches(question,matches)
-        print("Did you mean :", calculate_match, '?')
+        row = [item[0] for item in self._cursor.fetchall()]
+        calculate_match = get_close_matches(question, row)
+        print("Did you mean :", calculate_match[0], '?')
         user_input = input("Y/N ?").lower()
-        if user_input in ('yes', 'y'):
-            return calculate_match
+        if user_input in ("yes","y"):
+            self._cursor.execute("SELECT * FROM Dictionary WHERE Expression = '{}'".format(calculate_match[0]))
+            print(self._cursor.fetchall())
         else:
             return "No word definition found for that key, try again"
-
 
     def interface(self):
         while True:
