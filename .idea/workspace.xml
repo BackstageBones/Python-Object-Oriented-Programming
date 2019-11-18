@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74aafa18-a17f-4087-bec4-3ba0b9a95f2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Bulk File Rename Tool/Bulk File Rename Tool.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data Analysis excersises/using_pandas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/supermarkets-commas.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/supermarkets-semi-colons.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/supermarkets.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/supermarkets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/supermarkets.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bulk File Rename Tool/bulk_file_rename_tool.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bulk File Rename Tool/bulk_file_rename_tool.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +53,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Bulk File Rename Tool">
+  <component name="RunManager" selected="Python.bulk_file_rename_tool">
     <configuration name="BlackJack" type="PythonConfigurationType" factoryName="Python">
       <module name="Python-Object-Oriented-Programming" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -123,7 +117,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="game_logic" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="bulk_file_rename_tool" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python-Object-Oriented-Programming" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -131,11 +125,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RPG Game" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Bulk File Rename Tool" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RPG Game/game_logic.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Bulk File Rename Tool/bulk_file_rename_tool.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -209,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.bulk_file_rename_tool" />
         <item itemvalue="Python.Bulk File Rename Tool" />
         <item itemvalue="Python.using_pandas" />
         <item itemvalue="Python.MySQL_Interactive_Dictionary" />
         <item itemvalue="Python.sentence_maker_programme" />
-        <item itemvalue="Python.game_logic" />
       </list>
     </recent_temporary>
   </component>
