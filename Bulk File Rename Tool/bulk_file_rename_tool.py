@@ -1,5 +1,6 @@
 import os
 import shutil
+
 import filetype
 
 
@@ -9,11 +10,33 @@ class FileRenameTool(object):
         self._shutil = shutil
         self._filetype = filetype
 
-    def _print_current_directory(self):
-        print("Your current working directory is: \n {}".format(self._os.getcwd()))
-        print("The folder contains these files: ", self._os.listdir(self._os.getcwd()))
+    class __CopyMakerDecorator(object):
+        def __init__(self, decorated):
+            self.decorated = decorated
 
-    def change_directory(self):
+        def __call__(self, *args, **kwargs):
+            ask_for_copy = input("Would you like to make a copy of your files before renaming ?")
+            if ask_for_copy in ('y', 'yes'):
+                return self.decorated(*args)
+            else:
+                pass
+
+    class __ChangeDirectoryDecorator(object):
+        def __init__(self, decorated):
+            self.decorated = decorated
+
+        def __call__(self, *args, **kwargs):
+            ask_to_change_dir = input("Would you like to change directory ?")
+            if ask_to_change_dir in ('y', 'yes'):
+                return self.decorated(*args)
+            else:
+                pass
+
+    def __str__(self):
+        return "Your current working directory is: \n {} and it contains these files \n {}".format(self._os.getcwd(), self._os.listdir(self._os.getcwd()))
+
+    @__ChangeDirectoryDecorator
+    def _change_directory(self):
         user_directory = input("Provide a path to navigate to: ")
         try:
             # Change the current working Directory
@@ -24,8 +47,8 @@ class FileRenameTool(object):
         finally:
             print(self._os.listdir(self._os.getcwd()))
 
-    def rename_files_in_folder(self, ):
-        images_extensions = ('.jpg', '.png', '.psd', '.tiff',)
+    def _rename_files_in_folder(self):
+        images_extensions = ('jpg', 'png', 'psd', 'tiff',)
         documents_extensions = ('.doc', '.txt', '.pdf')
         # ask which files would you like to rename
         user_specify = input(
@@ -36,30 +59,26 @@ class FileRenameTool(object):
             for file in self._os.listdir(self._os.getcwd()):
                 i += 1
                 if self._os.path.isfile(file):
-                # name, ext = self._os.path.splitext(file)
                     kind = self._filetype.guess(self._os.path.abspath(file))
-                    print(kind)
+                    if kind is not None:
+                        if kind.extension in images_extensions:
+                            self._os.rename(file, user_naming + '_' + str(i) + '.' + str(kind.extension))
 
-    """        
-     elif user_specify in ('text', 'documents'):
-         user_input = input("Provide file naming convention")
-         i = 0
-         for file in self._os.listdir(self._os.getcwd()):
-             i += 1
-             name, ext = self._os.path.splitext(file)
-             if ext == documents_extensions[0]:
-                 self._os.rename(file, user_input + '_' + str(i) + documents_extensions[0])
-             elif ext == documents_extensions[1]:
-                 self._os.rename(file, user_input + '_' + str(i) + documents_extensions[1])
-             elif ext == documents_extensions[2]:
-                 self._os.rename(file, user_input + '_' + str(i) + documents_extensions[2])
-             else:
-                 break
-     else:
-         return "unknown file type, cannot rename"
- """
+        elif user_specify in ('text', 'documents'):
+            user_naming = input("Provide file naming convention")
+            i = 0
+            for file in self._os.listdir(self._os.getcwd()):
+                i += 1
+                if self._os.path.isfile(file):
+                    kind = self._filetype.guess(self._os.path.abspath(file))
+                    if kind is not None:
+                        if kind.extension in documents_extensions:
+                            self._os.rename(file, user_naming + '_' + str(i) + '.' + str(kind.extension))
+        else:
+            return "unknown file type, cannot rename"
 
-    def make_copy(self):
+    @__CopyMakerDecorator
+    def _make_copy(self):
         copy_place = self._os.getcwd() + "//copied_old"
         try:
             self._os.mkdir(copy_place)
@@ -81,6 +100,7 @@ class FileRenameTool(object):
 
 if __name__ == "__main__":
     BulkTool = FileRenameTool()
-    BulkTool.change_directory()
-    BulkTool.make_copy()
-    BulkTool.rename_files_in_folder()
+    BulkTool.__str__()
+    BulkTool._change_directory()
+    BulkTool._make_copy()
+    BulkTool._rename_files_in_folder()
