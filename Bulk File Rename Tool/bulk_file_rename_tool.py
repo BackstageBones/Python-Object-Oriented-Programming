@@ -67,6 +67,7 @@ class FileRenameTool(object):
         elif user_specify in ('text', 'documents'):
             user_naming = input("Provide file naming convention")
             i = 0
+
             for file in self._os.listdir(self._os.getcwd()):
                 i += 1
                 if self._os.path.isfile(file):
