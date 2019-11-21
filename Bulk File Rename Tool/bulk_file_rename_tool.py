@@ -14,23 +14,31 @@ class FileRenameTool(object):
         def __init__(self, decorated):
             self.decorated = decorated
 
-        def __call__(self, *args, **kwargs):
+        def __get__(self, obj, objtype):
+            """Support instance methods."""
+            import functools
+            return functools.partial(self.__call__, obj)
+
+        def __call__(self, obj, *args, **kwargs):
             ask_for_copy = input("Would you like to make a copy of your files before renaming ?")
             if ask_for_copy in ('y', 'yes'):
-                return self.decorated(*args)
-            else:
-                pass
+                return self.decorated(obj, *args, **kwargs)
+
 
     class __ChangeDirectoryDecorator(object):
         def __init__(self, decorated):
             self.decorated = decorated
 
-        def __call__(self, *args, **kwargs):
+        def __get__(self, obj, objtype):
+            """Support instance methods."""
+            import functools
+            return functools.partial(self.__call__, obj)
+
+        def __call__(self, obj, *args, **kwargs):
             ask_to_change_dir = input("Would you like to change directory ?")
             if ask_to_change_dir in ('y', 'yes'):
-                return self.decorated(*args)
-            else:
-                pass
+                return self.decorated(obj, *args, **kwargs)
+
 
     def __str__(self):
         return "Your current working directory is: \n {} and it contains these files \n {}".format(self._os.getcwd(), self._os.listdir(self._os.getcwd()))
