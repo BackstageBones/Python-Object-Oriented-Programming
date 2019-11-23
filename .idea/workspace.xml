@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74aafa18-a17f-4087-bec4-3ba0b9a95f2b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Folium based Web Map/webmap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Folium based Web Map/webmap_constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bulk File Rename Tool/bulk_file_rename_tool.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bulk File Rename Tool/bulk_file_rename_tool.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -254,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573058866325</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="finall working version with class decorators bound to a primary class">
+      <created>1574349966144</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1574349966144</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -280,12 +288,14 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="simple version of dictionary. Text autocorrect not implemented yet. changing string to lowercase is malfunctioning" />
     <MESSAGE value="fixed text autocorrection" />
     <MESSAGE value="added function that suggest closest word using machining algorithm from python builtin library." />
     <MESSAGE value="added functionality to terminate the programme" />
-    <option name="LAST_COMMIT_MESSAGE" value="added functionality to terminate the programme" />
+    <MESSAGE value="finall working version with class decorators bound to a primary class" />
+    <option name="LAST_COMMIT_MESSAGE" value="finall working version with class decorators bound to a primary class" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
