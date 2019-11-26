@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_654bfbc10ab94f79af8be811ffa77be0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_654bfbc10ab94f79af8be811ffa77be0" ></div>
+        
+</body>
+<script>    
+    
+            var map_654bfbc10ab94f79af8be811ffa77be0 = L.map(
+                "map_654bfbc10ab94f79af8be811ffa77be0",
+                {
+                    center: [51.1099, 17.0334],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0c7b52766c2f41a6959f91f2b67bc34a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_654bfbc10ab94f79af8be811ffa77be0);
+        
+    
+            var feature_group_041ea987bd6a4a569b2202323032633a = L.featureGroup(
+                {}
+            ).addTo(map_654bfbc10ab94f79af8be811ffa77be0);
+        
+    
+            var marker_2f7e73a27d184236af49df617ce7190c = L.marker(
+                [51.11149, 17.04556],
+                {}
+            ).addTo(feature_group_041ea987bd6a4a569b2202323032633a);
+        
+    
+            var icon_d211cc8fa8b44b7ba2ac54ef130a4bf5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "green", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2f7e73a27d184236af49df617ce7190c.setIcon(icon_d211cc8fa8b44b7ba2ac54ef130a4bf5);
+        
+    
+        var popup_27bdaae89e0f48b385fd078f1f249be1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b75fc55963c497ab4573c095abc9e39 = $(`<div id="html_5b75fc55963c497ab4573c095abc9e39" style="width: 100.0%; height: 100.0%;">Bastion Ceglarski</div>`)[0];
+            popup_27bdaae89e0f48b385fd078f1f249be1.setContent(html_5b75fc55963c497ab4573c095abc9e39);
+        
+
+        marker_2f7e73a27d184236af49df617ce7190c.bindPopup(popup_27bdaae89e0f48b385fd078f1f249be1)
+        ;
+
+        
+    
+    
+            var marker_373450f8bed34bd38494d2fadfb5241c = L.marker(
+                [51.10481, 17.03927],
+                {}
+            ).addTo(feature_group_041ea987bd6a4a569b2202323032633a);
+        
+    
+            var icon_19302463f9994b09bb21ff2fde9a5f20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "green", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_373450f8bed34bd38494d2fadfb5241c.setIcon(icon_19302463f9994b09bb21ff2fde9a5f20);
+        
+    
+        var popup_f8e6618856b64e799b786126a7d76e97 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fcfaad0184e44f48a72f02dbd29a4782 = $(`<div id="html_fcfaad0184e44f48a72f02dbd29a4782" style="width: 100.0%; height: 100.0%;">Bastion Sakwowy</div>`)[0];
+            popup_f8e6618856b64e799b786126a7d76e97.setContent(html_fcfaad0184e44f48a72f02dbd29a4782);
+        
+
+        marker_373450f8bed34bd38494d2fadfb5241c.bindPopup(popup_f8e6618856b64e799b786126a7d76e97)
+        ;
+
+        
+    
+    
+            var marker_018651adc23044fa903cbbf1b6154935 = L.marker(
+                [51.10731, 17.04058],
+                {}
+            ).addTo(feature_group_041ea987bd6a4a569b2202323032633a);
+        
+    
+            var icon_3297cba1485a455f9a063b21193c36f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "green", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_018651adc23044fa903cbbf1b6154935.setIcon(icon_3297cba1485a455f9a063b21193c36f7);
+        
+    
+        var popup_7712063dc87f4878a31902fabd0910b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0b4a0f6ca454a10a242c4c74d80320e = $(`<div id="html_f0b4a0f6ca454a10a242c4c74d80320e" style="width: 100.0%; height: 100.0%;">Brama Oławska</div>`)[0];
+            popup_7712063dc87f4878a31902fabd0910b2.setContent(html_f0b4a0f6ca454a10a242c4c74d80320e);
+        
+
+        marker_018651adc23044fa903cbbf1b6154935.bindPopup(popup_7712063dc87f4878a31902fabd0910b2)
+        ;
+
+        
+    
+    
+            var marker_93a08f2c8f414efe9111e2afe7db3491 = L.marker(
+                [51.10875, 17.04188],
+                {}
+            ).addTo(feature_group_041ea987bd6a4a569b2202323032633a);
+        
+    
+            var icon_338433c3bc024fbd81dd67972580a758 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "green", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_93a08f2c8f414efe9111e2afe7db3491.setIcon(icon_338433c3bc024fbd81dd67972580a758);
+        
+    
+        var popup_ac4c9dc5ea2346b78d42e93a77849f97 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_11ce9dc842a04893adf1e61f7577ec63 = $(`<div id="html_11ce9dc842a04893adf1e61f7577ec63" style="width: 100.0%; height: 100.0%;">Basteja św.Hioba</div>`)[0];
+            popup_ac4c9dc5ea2346b78d42e93a77849f97.setContent(html_11ce9dc842a04893adf1e61f7577ec63);
+        
+
+        marker_93a08f2c8f414efe9111e2afe7db3491.bindPopup(popup_ac4c9dc5ea2346b78d42e93a77849f97)
+        ;
+
+        
+    
+    
+            var marker_566464fae3944592b025800d735d34de = L.marker(
+                [51.11194, 17.04025],
+                {}
+            ).addTo(feature_group_041ea987bd6a4a569b2202323032633a);
+        
+    
+            var icon_8cd9565d70c54877a302826e511651fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "green", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_566464fae3944592b025800d735d34de.setIcon(icon_8cd9565d70c54877a302826e511651fa);
+        
+    
+        var popup_0eb20915106840debc8099e38884d7a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d46b41e706f040d5bef88c2fffe55969 = $(`<div id="html_d46b41e706f040d5bef88c2fffe55969" style="width: 100.0%; height: 100.0%;">Baszta Niedźwiadka</div>`)[0];
+            popup_0eb20915106840debc8099e38884d7a2.setContent(html_d46b41e706f040d5bef88c2fffe55969);
+        
+
+        marker_566464fae3944592b025800d735d34de.bindPopup(popup_0eb20915106840debc8099e38884d7a2)
+        ;
+
+        
+    
+    
+            var marker_1c6fa6f17a444593bd2a842e7ed70d84 = L.marker(
+                [51.10702, 17.02641],
+                {}
+            ).addTo(feature_group_041ea987bd6a4a569b2202323032633a);
+        
+    
+            var icon_0ffcc3b31eb44072825ba08e07be4b2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "green", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1c6fa6f17a444593bd2a842e7ed70d84.setIcon(icon_0ffcc3b31eb44072825ba08e07be4b2d);
+        
+    
+        var popup_608de79e297846e6bf3a39bedb3e557c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5dfdc7b13b3b4a4c84687bd8ed158713 = $(`<div id="html_5dfdc7b13b3b4a4c84687bd8ed158713" style="width: 100.0%; height: 100.0%;">Bastion Krupniczy</div>`)[0];
+            popup_608de79e297846e6bf3a39bedb3e557c.setContent(html_5dfdc7b13b3b4a4c84687bd8ed158713);
+        
+
+        marker_1c6fa6f17a444593bd2a842e7ed70d84.bindPopup(popup_608de79e297846e6bf3a39bedb3e557c)
+        ;
+
+        
+    
+</script>

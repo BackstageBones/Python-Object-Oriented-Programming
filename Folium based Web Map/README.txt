@@ -1,0 +1,1 @@
+Before use of webmpa.py make directory /Folium Based Web Map as Source Root in IDE
