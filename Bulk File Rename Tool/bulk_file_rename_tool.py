@@ -1,6 +1,6 @@
 import os
 import shutil
-
+import functools
 import filetype
 
 
@@ -16,7 +16,6 @@ class FileRenameTool(object):
 
         def __get__(self, obj, objtype):
             """Support instance methods."""
-            import functools
             return functools.partial(self.__call__, obj)
 
         def __call__(self, obj, *args, **kwargs):
@@ -24,14 +23,12 @@ class FileRenameTool(object):
             if ask_for_copy in ('y', 'yes'):
                 return self.decorated(obj, *args, **kwargs)
 
-
     class __ChangeDirectoryDecorator(object):
         def __init__(self, decorated):
             self.decorated = decorated
 
         def __get__(self, obj, objtype):
             """Support instance methods."""
-            import functools
             return functools.partial(self.__call__, obj)
 
         def __call__(self, obj, *args, **kwargs):
@@ -39,9 +36,10 @@ class FileRenameTool(object):
             if ask_to_change_dir in ('y', 'yes'):
                 return self.decorated(obj, *args, **kwargs)
 
-
     def __str__(self):
-        return "Your current working directory is: \n {} and it contains these files \n {}".format(self._os.getcwd(), self._os.listdir(self._os.getcwd()))
+        return "Your current working directory is: \n {} and it contains these files \n {}".format(self._os.getcwd(),
+                                                                                                   self._os.listdir(
+                                                                                                       self._os.getcwd()))
 
     @__ChangeDirectoryDecorator
     def _change_directory(self):
@@ -60,7 +58,7 @@ class FileRenameTool(object):
         documents_extensions = ('.doc', '.txt', '.pdf')
         # ask which files would you like to rename
         user_specify = input(
-            "Which files would you like to rename? \n type 'images' for images or 'text for text files")
+            "Which files would you like to rename? \n type 'images' for images or 'text' for text files ")
         if user_specify in ('images', 'pictures'):
             user_naming = input("Provide file naming convention")
             i = 0
