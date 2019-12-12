@@ -6,8 +6,7 @@ class SqlQueries():
                                             date DATE NOT NULL
                                         ); """
 
-    sql_insert_statement = ''' 
-                            INSERT INTO Expenses(id, category, quota, date
-                            VALUES(?,?,?,?)
+    sql_insert_statement = ''' INSERT INTO Expenses(id, category, quota, date)
+                                VALUES(?,?,?,?)
     
                              '''

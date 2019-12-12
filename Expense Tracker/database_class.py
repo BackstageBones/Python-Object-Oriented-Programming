@@ -1,6 +1,6 @@
 import sqlite3
 from sqlite3 import Error
-import os
+
 
 from data_base_resources import SqlQueries
 
@@ -27,19 +27,38 @@ class MyDataBase(object):
             if conn:
                 return conn
 
-    def execute_query(self, *args):
-        """ execute queries from sql statements
-            :param args: sql statements
-            :return:
+
+    def create_table(self, querie):
+        """ create a table from the sql statement
+            :param querie: create table statement
+            :return: db file
             """
-        for arg in args:
-            try:
-                self.conn.execute(arg)
-            except Error as e:
-                print(e)
+        try:
+            self.conn.execute(querie)
+        except Error as e:
+            print(e)
+        return self.db_file
+
+    def insert_data(self, statement, data):
+        """ inserts data into selected table
+            :param statement: existing sql table
+            :param data -> tuple: values you wish to insert inside table
+            :return: updated sql table
+        """
+        try:
+            self.conn.execute(statement, data)
+        except Error as e:
+            print(e)
+        else:
+            self.conn.close()
         return self
+
+
+
+
 
 if __name__ == "__main__":
     mydb = MyDataBase()
     mydb.make_connection()
-    mydb.execute_query(SqlQueries.sql_create_expenses_table)
+    mydb.create_table(SqlQueries.sql_create_expenses_table)
+    mydb.insert_data(SqlQueries.sql_insert_statement, (1,'food', 300, 11-12.2019))
