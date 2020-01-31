@@ -2,15 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74aafa18-a17f-4087-bec4-3ba0b9a95f2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Expense Tracker/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Expense Tracker/data_base_resources.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Expense Tracker/database_class.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Desktop Database Application/database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Desktop Database Application/gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Python-Object-Oriented-Programming.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python-Object-Oriented-Programming.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Expense Tracker/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop Database Application/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Expense Tracker/data_base_resources.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Expense Tracker/database_class.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HangMan/Hangman.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="356" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Python-Object-Oriented-Programming" />
@@ -37,23 +46,26 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Folium based Web Map" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Adrian-PC\PycharmProjects\Python-Object-Oriented-Programming\Folium based Web Map\constants" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Adrian-PC\PycharmProjects\Python-Object-Oriented-Programming\Expense Tracker" />
       <recent name="C:\Users\Adrian-PC\PycharmProjects\Python-Object-Oriented-Programming\Folium based Web Map" />
       <recent name="C:\Users\Adrian-PC\PycharmProjects\Python-Object-Oriented-Programming\Black_Jack" />
       <recent name="C:\Users\Adrian-PC\PycharmProjects\Python-Object-Oriented-Programming" />
       <recent name="C:\Users\Adrian-PC\PycharmProjects\Python-Object-Oriented-Programming\Sentence_maker_programme" />
-      <recent name="C:\Users\Adrian-PC\PycharmProjects\Python-Object-Oriented-Programming\Interactive_dictionary" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Adrian-PC\PycharmProjects\Python-Object-Oriented-Programming\Expense Tracker" />
+      <recent name="C:\Users\Adrian-PC\PycharmProjects\Python-Object-Oriented-Programming\Folium based Web Map\constants" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.webmap script">
+  <component name="RunManager" selected="Python.database">
     <configuration name="BlackJack" type="PythonConfigurationType" factoryName="Python">
       <module name="Python-Object-Oriented-Programming" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -66,28 +78,8 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Black_Jack/BlackJack.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Bulk File Rename Tool" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Python-Object-Oriented-Programming" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Bulk File Rename Tool" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Bulk File Rename Tool/Bulk File Rename Tool.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -108,7 +100,52 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Bulk File Rename Tool/bulk_file_rename_tool.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="database" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python-Object-Oriented-Programming" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Desktop Database Application" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Desktop Database Application/database.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="database_class" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python-Object-Oriented-Programming" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Expense Tracker" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Expense Tracker/database_class.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -129,28 +166,8 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Interactive_dictionary/interactive_dictionary.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="using_pandas" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Python-Object-Oriented-Programming" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data Analysis excersises" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data Analysis excersises/using_pandas.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -171,6 +188,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Folium based Web Map/webmap script" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -192,6 +210,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Folium based Web Map/webmap.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -203,11 +222,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.database" />
+        <item itemvalue="Python.database_class" />
         <item itemvalue="Python.webmap script" />
         <item itemvalue="Python.webmap" />
         <item itemvalue="Python.bulk_file_rename_tool" />
-        <item itemvalue="Python.Bulk File Rename Tool" />
-        <item itemvalue="Python.using_pandas" />
       </list>
     </recent_temporary>
   </component>
@@ -237,6 +256,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1546112247515</updated>
+      <workItem from="1579708444282" duration="1395000" />
+      <workItem from="1580147663645" duration="112000" />
+      <workItem from="1580154781630" duration="268000" />
+      <workItem from="1580155353994" duration="418000" />
+      <workItem from="1580482540015" duration="5392000" />
     </task>
     <task id="LOCAL-00001" summary="simple version of dictionary. Text autocorrect not implemented yet. changing string to lowercase is malfunctioning">
       <created>1573051905633</created>
@@ -285,6 +309,9 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -312,9 +339,58 @@
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="655" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1575386811649">
+    <state x="552" y="179" key="#SQL_Dialects" timestamp="1580483027000">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575386811649" />
+    <state x="552" y="179" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1580483027000" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1580488858471">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580488858471" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1580488858471">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580488858471" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1580488858471">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580488858471" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1580488858471">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580488858471" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1580488689548">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580488689548" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1580488689548">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580488689548" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1580488689548">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580488689548" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1580488689548">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580488689548" />
+    <state x="461" y="163" key="SettingsEditor" timestamp="1579708520252">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579708520252" />
+    <state x="655" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1580482545589">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="655" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580482545589" />
+    <state x="681" y="431" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1575390745266">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="681" y="431" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575390745266" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Python_Object_Oriented_Programming$database.coverage" NAME="database Coverage Results" MODIFIED="1580488217895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Desktop Database Application" />
+    <SUITE FILE_PATH="coverage/Python_Object_Oriented_Programming$BlackJack.coverage" NAME="BlackJack Coverage Results" MODIFIED="1580155714640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Black_Jack" />
+    <SUITE FILE_PATH="coverage/Python_Object_Oriented_Programming$interactive_dictionary.coverage" NAME="interactive_dictionary Coverage Results" MODIFIED="1580154795229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Interactive_dictionary" />
   </component>
 </project>
