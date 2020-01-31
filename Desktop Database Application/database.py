@@ -16,13 +16,14 @@ class MyDataBase(object):
         return self.connect.close()
 
     def create_table(self, **kwargs):
-        query = "CREATE TABLE IF NOT EXISTS {} ("
+        query = 'CREATE TABLE IF NOT EXISTS {} ('
+        comma = r','
         for key, value in kwargs.items():
             if key != 'table_name':
-                query = query + key + ' ' + value + " ,"
-        query = query.replace(query[-1], '').format(kwargs['table_name']) +")"
+                query = query + key + ' ' + value + comma
+        query = query.format(kwargs['table_name']).rstrip(',') + ")"
         return self.cursor.execute(query)
 
 
 db = MyDataBase('local')
-print(db.create_table(table_name='store', item='TEXT', quantity='INTEGER', price='REAL'))
+db.create_table(table_name='store', item='TEXT', quantity='INTEGER', price='REAL')
