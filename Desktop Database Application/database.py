@@ -15,12 +15,14 @@ class MyDataBase(object):
         self.connect.commit()
         return self.connect.close()
 
-    def create_table(self, tabel_name, **kwargs):
-        query = "CREATE TABLE IF NOT EXISTS table.name ("
-        for item in range(len(kwargs)):
-            query = query + "{} {},"
+    def create_table(self, **kwargs):
+        query = "CREATE TABLE IF NOT EXISTS {} ("
         for key, value in kwargs.items():
-            query.format(key, value)
-        return query.replace('table.name', tabel_name) + """)")"""
+            if key != 'table_name':
+                query = query + key + ' ' + value + " ,"
+        query = query.replace(query[-1], '').format(kwargs['table_name']) +")"
+        return self.cursor.execute(query)
 
-    print(create_table('store', item='TEXT', quantity='INTEGER', price='REAL'))
+
+db = MyDataBase('local')
+print(db.create_table(table_name='store', item='TEXT', quantity='INTEGER', price='REAL'))

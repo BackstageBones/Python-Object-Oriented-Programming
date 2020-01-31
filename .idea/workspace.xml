@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74aafa18-a17f-4087-bec4-3ba0b9a95f2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Desktop Database Application/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Desktop Database Application/gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Python-Object-Oriented-Programming.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python-Object-Oriented-Programming.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Expense Tracker/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop Database Application/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Expense Tracker/data_base_resources.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Expense Tracker/database_class.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HangMan/Hangman.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop Database Application/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop Database Application/database.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +252,7 @@
       <workItem from="1580147663645" duration="112000" />
       <workItem from="1580154781630" duration="268000" />
       <workItem from="1580155353994" duration="418000" />
-      <workItem from="1580482540015" duration="5392000" />
+      <workItem from="1580482540015" duration="9241000" />
     </task>
     <task id="LOCAL-00001" summary="simple version of dictionary. Text autocorrect not implemented yet. changing string to lowercase is malfunctioning">
       <created>1573051905633</created>
@@ -343,38 +335,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1580483027000" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1580488858471">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1580493261517">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580488858471" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1580488858471">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580493261517" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1580493261517">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580488858471" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1580488858471">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580493261517" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1580493261517">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580488858471" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1580488858471">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580493261517" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1580493261517">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580488858471" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1580488689548">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580493261517" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1580491406829">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580488689548" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1580488689548">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580491406829" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1580491406829">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580488689548" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1580488689548">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580491406829" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1580491406829">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580488689548" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1580488689548">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580491406829" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1580491406829">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580488689548" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580491406829" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1579708520252">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -389,7 +381,7 @@
     <state x="681" y="431" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575390745266" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Python_Object_Oriented_Programming$database.coverage" NAME="database Coverage Results" MODIFIED="1580488217895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Desktop Database Application" />
+    <SUITE FILE_PATH="coverage/Python_Object_Oriented_Programming$database.coverage" NAME="database Coverage Results" MODIFIED="1580493261513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Desktop Database Application" />
     <SUITE FILE_PATH="coverage/Python_Object_Oriented_Programming$BlackJack.coverage" NAME="BlackJack Coverage Results" MODIFIED="1580155714640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Black_Jack" />
     <SUITE FILE_PATH="coverage/Python_Object_Oriented_Programming$interactive_dictionary.coverage" NAME="interactive_dictionary Coverage Results" MODIFIED="1580154795229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Interactive_dictionary" />
   </component>
