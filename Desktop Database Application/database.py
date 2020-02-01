@@ -22,7 +22,6 @@ class MyDataBase(object):
             if key != 'table_name':
                 query = query + key + ' ' + value + comma
         query = query.format(kwargs['table_name']).rstrip(' ,') + ")"
-        print(query)
         return self.cursor.execute(query)
 
     def insert_values(self, *args):
@@ -35,10 +34,15 @@ class MyDataBase(object):
                 else:
                     query = query + str(arg) + comma
         query = query.format(args[0]).rstrip(" ,") + ")"
-        print(query)
         return self.cursor.execute(query)
+
+    def view(self, table_name):
+        self.cursor.execute("SELECT * FROM {}".format(table_name))
+        return self.cursor.fetchall()
+
 
 
 db = MyDataBase('local')
 db.create_table(table_name='store', item='TEXT', quantity='INTEGER', price='REAL')
-#db.insert_values('store', 'wine glass', 8, 10.5)
+db.insert_values('store', 'wine glass', 8, 10.5)
+db.view('store')
