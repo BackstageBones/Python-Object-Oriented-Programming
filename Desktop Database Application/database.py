@@ -1,5 +1,9 @@
+"""
+A class that stores basic  values about books such as author, year or unique identifying number
+class creates a local db file at its instantiation and allows to insert, update or delete elements in it.
+"""
+
 import sqlite3
-import logging
 
 
 class MyDataBase(object):
@@ -16,61 +20,35 @@ class MyDataBase(object):
         self.connect.commit()
         return self.connect.close()
 
-    def create_table(self, **kwargs):
-        """
-         param kwargs: create arbitrary number of columns inside your table
-         param table_name: first parameter must be specified with table_name which creates table
-        """
-        query = "CREATE TABLE IF NOT EXISTS {} ("
-        comma = r', '
-        for key, value in kwargs.items():
-            if key != 'table_name':
-                query = query + key + ' ' + value + comma
-        query = query.format(kwargs['table_name']).rstrip(' ,') + ")"
-        return self.cursor.execute(query)
+    def create_table(self):
+        query = "CREATE TABLE IF NOT EXISTS book (id INTEGER PRIMARY KEY, title text, author text, year integer, isbn integer)"
+        self.cursor.execute(query)
+        return self.close_connection()
 
+    def insert_values(self, title, author, year, isbn):
+        query = f"INSERT INTO book VALUES (NULL, {title}, {author}, {year}, {isbn} )"
+        self.cursor.execute(query)
+        return self.close_connection()
 
-    def insert_values(self, *args):
-        query = r"INSERT INTO {} VALUES ("
-        comma = r','
-        for arg in args:
-            if arg != args[0]:
-                if type(arg) == str:
-                    query = query + "'" + arg + "'" + comma
-                else:
-                    query = query + str(arg) + comma
-        query = query.format(args[0]).rstrip(" ,") + ")"
-        return self.cursor.execute(query)
+    def view(self):
+        query = "SELECT * FROM book"
+        self.cursor.execute(query)
+        return self.cursor.fetchall()
 
+    def delete_specific_row(self, row, item):
+        query = "DELETE FROM book WHERE {}='{}'"
+        query = query.format(row, item)
+        self.cursor.execute(query)
+        return self.close_connection()
 
-    def view(self, table_name):
-        self.cursor.execute("SELECT * FROM {}".format(table_name))
+    def update_table(self, title, author, year, isbn, id):
+        query = f"UPDATE book SET title={title}, author={author}, year={year}, isbn={isbn} WHERE id={id}"
+        self.cursor.execute(query)
+        return self.close_connection()
+
+    def search_table(self, title, author, year, isbn):
+        query = f"SELECT * FROM book WHERE title={title} OR author={author} OR year={year} OR isbn={isbn}"
+        self.cursor.execute(query)
         return self.cursor.fetchall()
 
 
-    def delete_specific_row(self, table_name, row, item):
-        query = "DELETE FROM {} WHERE {}='{}'"
-        query = query.format(table_name, row, item)
-        self.cursor.execute(query)
-
-    def update_table(self, **kwargs):
-        query = "UPDATE {} SET "
-        query_ending = " WHERE {}={}"
-        comma = r', '
-        for key, value in kwargs.items():
-            if key != 'table_name':
-                if key != 'item':
-                    query = query + str(key) + '=' + str(value) + comma
-                else:
-                    query = query.format(kwargs['table_name']).rstrip(" ,") + query_ending.format(key,"'" + value+"'")
-        return self.cursor.execute(query)
-
-
-
-
-db = MyDataBase('local')
-db.create_table(table_name='store', item='TEXT', quantity='INTEGER', price='REAL')
-db.insert_values('store', 'wine glass', 8, 10.5)
-#db.delete_specific_row('store','item', "wine glass")
-db.update_table(table_name='store', quantity=10, price=15, item='coffe cup')
-print(db.view('store'))
