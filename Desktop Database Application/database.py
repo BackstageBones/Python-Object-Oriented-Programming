@@ -21,7 +21,8 @@ class MyDataBase(object):
         return self.connect.close()
 
     def create_table(self):
-        query = "CREATE TABLE IF NOT EXISTS book (id INTEGER PRIMARY KEY, title text, author text, year integer, isbn integer)"
+        query = "CREATE TABLE IF NOT EXISTS book (id INTEGER PRIMARY KEY, title text, author text, year integer, " \
+                "isbn integer) "
         self.cursor.execute(query)
         return self.close_connection()
 

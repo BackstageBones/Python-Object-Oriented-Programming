@@ -1,4 +1,4 @@
-from tkinter import Tk, Label, Entry, StringVar, Listbox, Scrollbar
+from tkinter import Tk, Label, Entry, StringVar, Listbox, Scrollbar, Button
 from database import MyDataBase
 
 
@@ -34,15 +34,33 @@ class Database_GUI(MyDataBase):
         self.isbn_text_entry.grid(row=1, column=3)
 
         self.listbox = Listbox(self.window, height=6, width=45)
-        self.listbox.grid(row=2, column=0, columnspan=8, rowspan=6)
+        self.listbox.grid(row=2, column=0, columnspan=6, rowspan=6)
 
         self.scrollbar = Scrollbar(self.window)
-        self.scrollbar.grid(row=3, column=6, rowspan=6)
+        self.scrollbar.grid(row=2, column=6, rowspan=6)
 
         self.listbox.configure(yscrollcommand=self.scrollbar.set)
         self.scrollbar.configure(command=self.listbox.yview)
+        
+        self.button_view_all = Button(self.window, text="View all", width=12, command=self.view)
+        self.button_view_all.grid(row=0, column=7)
+
+        self.button_search_entry = Button(self.window, text="Search entry", width=12, command=self.search_table)
+        self.button_search_entry.grid(row=1, column=7)
+
+        self.button_add_entry = Button(self.window, text="Add entry", width=12)
+        self.button_add_entry.grid(row=2, column=7)
+
+        self.button_update = Button(self.window, text="Update", width=12)
+        self.button_update.grid(row=3, column=7)
+
+        self.button_delete = Button(self.window, text="Delete", width=12)
+        self.button_delete.grid(row=4, column=7)
+
+        self.button_close = Button(self.window, text="Close", width=12)
+        self.button_close.grid(row=5, column=7)
 
 
 if __name__ == "__main__":
-    window = Database_GUI('local')
+    window = Database_GUI('local.db')
     window.window.mainloop()
