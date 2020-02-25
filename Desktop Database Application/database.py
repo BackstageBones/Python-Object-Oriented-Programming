@@ -56,12 +56,13 @@ class MyDataBase(object):
         return self.commit_changes()
 
     def search_table(self, title, author, year, isbn):
-        query = f"SELECT * FROM book WHERE title={title} OR author={author} OR year={year} OR isbn={isbn}"
+        query = f"SELECT * FROM book WHERE title ='{title}' OR author='{author}' OR year='{year}' OR isbn='{isbn}'"
         self.cursor.execute(query)
         return self.cursor.fetchall()
 
 
-if __name__ == "__main__":
-    mydatabase = MyDataBase('local.db')
-    mydatabase.insert_values('sapiens', 'harrari', 2012, 1227)
-    print(mydatabase.view())
+# if __name__ == "__main__":
+#     mydatabase = MyDataBase('local.db')
+#     mydatabase.insert_values('sapiens', 'harrari', 2012, 1227)
+#     print(mydatabase.search_table('sapiens'))
+
