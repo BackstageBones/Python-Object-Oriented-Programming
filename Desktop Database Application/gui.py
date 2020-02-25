@@ -42,7 +42,7 @@ class Database_GUI(MyDataBase):
         self.listbox.configure(yscrollcommand=self.scrollbar.set)
         self.scrollbar.configure(command=self.listbox.yview)
         
-        self.button_view_all = Button(self.window, text="View all", width=12, command=self.view)
+        self.button_view_all = Button(self.window, text="View all", width=12, command=self.view_command)
         self.button_view_all.grid(row=0, column=7)
 
         self.button_search_entry = Button(self.window, text="Search entry", width=12, command=self.search_table)
@@ -59,6 +59,10 @@ class Database_GUI(MyDataBase):
 
         self.button_close = Button(self.window, text="Close", width=12)
         self.button_close.grid(row=5, column=7)
+
+    def view_command(self):
+        for row in self.view():
+            self.listbox.insert(row)
 
 
 if __name__ == "__main__":

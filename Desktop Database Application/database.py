@@ -12,8 +12,13 @@ class MyDataBase(object):
         self.db_name = db_name
         self.connect = sqlite3.connect(db_name)
         self.cursor = self.connect.cursor()
+        self.create_table()
 
     def __str__(self):
+        return MyDataBase
+
+    @property
+    def database_name(self):
         return self.db_name
 
     def close_connection(self):
@@ -21,13 +26,12 @@ class MyDataBase(object):
         return self.connect.close()
 
     def create_table(self):
-        query = "CREATE TABLE IF NOT EXISTS book (id INTEGER PRIMARY KEY, title text, author text, year integer, " \
-                "isbn integer) "
+        query = "CREATE TABLE IF NOT EXISTS book (id INTEGER PRIMARY KEY, title text, author text, year integer,isbn integer) "
         self.cursor.execute(query)
-        return self.close_connection()
+        return self.connect.commit()
 
     def insert_values(self, title, author, year, isbn):
-        query = f"INSERT INTO book VALUES (NULL, {title}, {author}, {year}, {isbn} )"
+        query = f"INSERT INTO book VALUES (NULL, {title}, {author}, {year}, {isbn})"
         self.cursor.execute(query)
         return self.close_connection()
 
@@ -52,4 +56,7 @@ class MyDataBase(object):
         self.cursor.execute(query)
         return self.cursor.fetchall()
 
-
+if __name__ == "__main__":
+    mydatabase = MyDataBase('local.db')
+    mydatabase.insert_values('sapiens','harrari',2012,1227)
+    print(mydatabase.view())
