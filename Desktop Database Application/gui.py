@@ -5,11 +5,10 @@ from database import MyDataBase
 
 class Database_GUI(MyDataBase):
 
-    def __init__(self, db_name):
-        self.db_name = db_name
+    def __init__(self):
         self.window = Tk()
         self.window.title('Book Management App')
-        super().__init__(db_name)
+        super().__init__()
 
         self.title_label = Label(self.window, text="Title")
         self.title_label.grid(row=0, column=0)
@@ -111,6 +110,6 @@ class Database_GUI(MyDataBase):
 
 
 if __name__ == "__main__":
-    window = Database_GUI('local.db')
+    window = Database_GUI()
     # window.insert_values('sapiens', 'harrari', 2012, 1227)
     window.window.mainloop()

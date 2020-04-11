@@ -3,26 +3,27 @@ A class that stores basic  values about books such as author, year or unique ide
 class creates a local db file at its instantiation and allows to insert, update or delete elements in it.
 """
 
-import sqlite3
+import psycopg2
 
 
 class MyDataBase(object):
 
-    def __init__(self, db_name):
-        self.db_name = db_name
-        self.connect = sqlite3.connect(db_name)
+    def __init__(self):
+        self.connect = psycopg2.connect(
+            dbname='tkinter_database',
+            user='postgres',
+            password='Logitechh151#',
+            host='localhost',
+            port='5432'
+        )
         self.cursor = self.connect.cursor()
         self.create_table()
 
-    def __str__(self):
-        return MyDataBase
+    # def __repr__(self):
+    # return f"created database object named {self.db_name}"
 
     def __del__(self):
         self.close_connection()
-
-    @property
-    def database_name(self):
-        return self.db_name
 
     def commit_changes(self):
         return self.connect.commit()
@@ -32,14 +33,14 @@ class MyDataBase(object):
         return self.connect.close()
 
     def create_table(self):
-        query = "CREATE TABLE IF NOT EXISTS book ('id' INTEGER PRIMARY KEY, 'title' TEXT, 'author' TEXT,year INTEGER, isbn INTEGER)"
+        query = "CREATE TABLE IF NOT EXISTS book (id SERIAL PRIMARY KEY, title TEXT NOT NULL , author TEXT NOT NULL ,year INTEGER, isbn INTEGER) "
         self.cursor.execute(query)
         return self.commit_changes()
 
     def insert_values(self, title, author, year, isbn):
-        query = "INSERT INTO book (id, title, author, year, isbn) VALUES (NULL, '{}', '{}', {}, {})".format(title,
-                                                                                                        author,
-                                                                                                        year, isbn)
+        query = "INSERT INTO book (id, title, author, year, isbn) VALUES (DEFAULT,'{}', '{}', {}, {})".format(title,
+                                                                                                             author,
+                                                                                                             year, isbn)
         self.cursor.execute(query)
         return self.commit_changes()
 
@@ -63,7 +64,3 @@ class MyDataBase(object):
         self.cursor.execute(query)
         return self.cursor.fetchall()
 
-# if __name__ == "__main__":
-#     mydatabase = MyDataBase('local.db')
-#     mydatabase.insert_values('sapiens', 'harrari', 2012, 1227)
-#     print(mydatabase.search_table('sapiens'))
